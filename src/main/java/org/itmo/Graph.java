@@ -5,6 +5,8 @@ import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicIntegerArray;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class Graph {
     private final int V;
@@ -34,14 +36,23 @@ public class Graph {
         queue.add(startVertex);
 
         // Can't use runnable because of the `pool.invokeAll` signature.
+        final Lock[] locks = new Lock[parallelism];
+        for (int i = 0; i < locks.length; i++) {
+            locks[i] = new ReentrantLock();
+        }
         final List<Callable<Void>> tasks = new ArrayList<>(parallelism);
         final Callable<Void> task = () -> {
             while (!queue.isEmpty()) {
                 Integer v = queue.poll();
-                if (v != null) {
+                if (v == null) {
+                    continue;
+                }
+                synchronized (locks[v % locks.length]) {
                     for (int n : adjList[v]) {
-                        if (!visited.getAndSet(n, true)) {
-                            queue.add(n);
+                        synchronized (locks[n % locks.length]) {
+                            if (!visited.getAndSet(n, true)) {
+                                queue.add(n);
+                            }
                         }
                     }
                 }
