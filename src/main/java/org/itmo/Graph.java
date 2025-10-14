@@ -36,10 +36,6 @@ public class Graph {
         queue.add(startVertex);
 
         // Can't use runnable because of the `pool.invokeAll` signature.
-        final Lock[] locks = new Lock[parallelism];
-        for (int i = 0; i < locks.length; i++) {
-            locks[i] = new ReentrantLock();
-        }
         final List<Callable<Void>> tasks = new ArrayList<>(parallelism);
         final Callable<Void> task = () -> {
             while (!queue.isEmpty()) {
@@ -47,13 +43,9 @@ public class Graph {
                 if (v == null) {
                     continue;
                 }
-                synchronized (locks[v % locks.length]) {
-                    for (int n : adjList[v]) {
-                        synchronized (locks[n % locks.length]) {
-                            if (!visited.getAndSet(n, true)) {
-                                queue.add(n);
-                            }
-                        }
+                for (int n : adjList[v]) {
+                    if (!visited.getAndSet(n, true)) {
+                        queue.add(n);
                     }
                 }
             }
