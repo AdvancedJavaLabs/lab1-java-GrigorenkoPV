@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicIntegerArray;
 
-class Graph {
+public class Graph {
     private final int V;
     private final ArrayList<Integer>[] adjList;
 
@@ -24,7 +24,7 @@ class Graph {
         }
     }
 
-    void parallelBFS(int startVertex) {
+    public void parallelBFS(int startVertex) {
         final int parallelism = Runtime.getRuntime().availableProcessors();
         final ExecutorService pool = Executors.newFixedThreadPool(parallelism);
         final AtomicBooleanArray visited = new AtomicBooleanArray(V);

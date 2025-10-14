@@ -18,7 +18,7 @@ public class RandomGraphGenerator {
         return (int) (key & 0xffffffffL);
     }
 
-    Graph generateGraph(Random r, int size, int numEdges) {
+    public Graph generateGraph(Random r, int size, int numEdges) {
         if (numEdges < size - 1) throw new IllegalArgumentException("We need min size-1 edges");
         long maxDirected = (long) size * (size - 1);
         if (numEdges > maxDirected) throw new IllegalArgumentException("Too many edges for directed graph without self-loops");
