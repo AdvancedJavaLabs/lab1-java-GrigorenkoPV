@@ -8,5 +8,11 @@ pkgs.mkShellNoCC {
   name = "par-prog-lab1";
   packages = with pkgs; [
     jdk8
+    (python3.withPackages (
+      p: with p; [
+        matplotlib
+        numpy
+      ]
+    ))
   ];
 }

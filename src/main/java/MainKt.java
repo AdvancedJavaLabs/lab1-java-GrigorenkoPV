@@ -7,9 +7,9 @@ public class MainKt {
     public static void main(String[] args) {
         final RandomGraphGenerator generator = new RandomGraphGenerator();
         final Random random = new Random(4);
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 5; i++) {
             System.err.println("Warmup " + i);
-            generator.generateGraph(random, 100_000, 1_000_000);
+            generator.generateGraph(random, 100_000, 10_000_000);
         }
         final int[] sizes = {10, 100, 1000, 10_000, 10_000, 50_000, 100_000};
         for (final int size : sizes) {
@@ -19,6 +19,9 @@ public class MainKt {
                     continue;
                 }
                 if (numEdges > size * (size - 1) / 2) {
+                    break;
+                }
+                if (numEdges > 50_000_000) {
                     break;
                 }
                 System.out.print(size + " " + numEdges + " ");
