@@ -4,11 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.Buffer;
-import java.util.HashSet;
+import java.util.Arrays;
 import java.util.Random;
-import java.util.function.BiFunction;
-import java.util.stream.IntStream;
 
 public class BFSTest {
 
@@ -49,4 +46,29 @@ public class BFSTest {
         return endTime - startTime;
     }
 
+    @Test
+    public void fuzz() {
+        Random r = new Random(42);
+        for (int iter_ = 0; iter_ < 1000; iter_++) {
+            final int size = 100 + r.nextInt(1000);
+            final int connections = size - 1 + r.nextInt(Math.max(size * size / 2 - 2 * size, 0));
+            System.out.println("--------------------------");
+            System.out.println("Generating graph of size " + size + " ...wait");
+            Graph g = new RandomGraphGenerator().generateGraph(r, size, connections);
+            System.out.println("Generation completed!\nStarting bfs");
+            final int startVertex = 0;
+            final boolean[] expected = g.bfs(startVertex);
+            final boolean[] actual = g.parallelBFS(startVertex).toArray();
+            if (!Arrays.equals(expected, actual)) {
+                System.err.println(g);
+                System.err.println(Arrays.toString(expected));
+                for (int i = 0; i < size; i++) {
+                    if (expected[i] != actual[i]) {
+                        System.err.println(i + ": " + expected[i] + " -> " + actual[i]);
+                    }
+                }
+                throw new RuntimeException();
+            }
+        }
+    }
 }

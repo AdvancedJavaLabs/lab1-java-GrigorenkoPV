@@ -1,0 +1,427 @@
+2025-10-14 03:31:25
+Full thread dump OpenJDK 64-Bit Server VM (25.462-b08 mixed mode):
+
+"Attach Listener" #201 daemon prio=9 os_prio=0 tid=0x00007f0774001000 nid=0x19eab waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-15-thread-12" #200 prio=5 os_prio=0 tid=0x00007f07e823d000 nid=0x19ded waiting on condition [0x00007f07ceef9000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x000000077b22b2f8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-15-thread-11" #199 prio=5 os_prio=0 tid=0x00007f07e823c800 nid=0x19dec waiting on condition [0x00007f07ce8f9000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x000000077b22b2f8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-15-thread-10" #198 prio=5 os_prio=0 tid=0x00007f07e8227000 nid=0x19deb waiting on condition [0x00007f07cebf9000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x000000077b22b2f8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-15-thread-9" #197 prio=5 os_prio=0 tid=0x00007f07e8233800 nid=0x19dea waiting on condition [0x00007f07ce7f9000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x000000077b22b2f8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-15-thread-8" #196 prio=5 os_prio=0 tid=0x00007f07e8230000 nid=0x19de9 waiting on condition [0x00007f07ceaf9000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x000000077b22b2f8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-15-thread-7" #195 prio=5 os_prio=0 tid=0x00007f07e8231800 nid=0x19de8 waiting on condition [0x00007f07ceff9000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x000000077b22b2f8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-15-thread-6" #194 prio=5 os_prio=0 tid=0x00007f07e822c800 nid=0x19de7 waiting for monitor entry [0x00007f07ce9f9000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at org.itmo.Graph.lambda$parallelBFS$0(Graph.java:51)
+	- waiting to lock <0x000000077b22b650> (a java.util.concurrent.locks.ReentrantLock)
+	at org.itmo.Graph$$Lambda$3/1915910607.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+   Locked ownable synchronizers:
+	- <0x000000077b22c718> (a java.util.concurrent.ThreadPoolExecutor$Worker)
+
+"pool-15-thread-5" #193 prio=5 os_prio=0 tid=0x00007f07e8228800 nid=0x19de6 waiting for monitor entry [0x00007f07ce6f9000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at org.itmo.Graph.lambda$parallelBFS$0(Graph.java:53)
+	- waiting to lock <0x000000077b22b770> (a java.util.concurrent.locks.ReentrantLock)
+	- locked <0x000000077b22b650> (a java.util.concurrent.locks.ReentrantLock)
+	at org.itmo.Graph$$Lambda$3/1915910607.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+   Locked ownable synchronizers:
+	- <0x000000077b22c450> (a java.util.concurrent.ThreadPoolExecutor$Worker)
+
+"pool-15-thread-4" #192 prio=5 os_prio=0 tid=0x00007f07e823a800 nid=0x19de5 waiting for monitor entry [0x00007f07cedf9000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at org.itmo.Graph.lambda$parallelBFS$0(Graph.java:53)
+	- waiting to lock <0x000000077b22b7a0> (a java.util.concurrent.locks.ReentrantLock)
+	- locked <0x000000077b22b710> (a java.util.concurrent.locks.ReentrantLock)
+	at org.itmo.Graph$$Lambda$3/1915910607.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+   Locked ownable synchronizers:
+	- <0x000000077b22c188> (a java.util.concurrent.ThreadPoolExecutor$Worker)
+
+"pool-15-thread-3" #191 prio=5 os_prio=0 tid=0x00007f07e822e000 nid=0x19de4 waiting for monitor entry [0x00007f07ce4f9000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at org.itmo.Graph.lambda$parallelBFS$0(Graph.java:53)
+	- waiting to lock <0x000000077b22b770> (a java.util.concurrent.locks.ReentrantLock)
+	- locked <0x000000077b22b7a0> (a java.util.concurrent.locks.ReentrantLock)
+	at org.itmo.Graph$$Lambda$3/1915910607.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+   Locked ownable synchronizers:
+	- <0x000000077b22bec0> (a java.util.concurrent.ThreadPoolExecutor$Worker)
+
+"pool-15-thread-2" #190 prio=5 os_prio=0 tid=0x00007f07e8238800 nid=0x19de3 waiting for monitor entry [0x00007f07cecf9000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at org.itmo.Graph.lambda$parallelBFS$0(Graph.java:53)
+	- waiting to lock <0x000000077b22b680> (a java.util.concurrent.locks.ReentrantLock)
+	- locked <0x000000077b22b770> (a java.util.concurrent.locks.ReentrantLock)
+	at org.itmo.Graph$$Lambda$3/1915910607.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+   Locked ownable synchronizers:
+	- <0x000000077b22bbf8> (a java.util.concurrent.ThreadPoolExecutor$Worker)
+
+"pool-15-thread-1" #189 prio=5 os_prio=0 tid=0x00007f07e8235000 nid=0x19de2 waiting for monitor entry [0x00007f07ce5f9000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at org.itmo.Graph.lambda$parallelBFS$0(Graph.java:53)
+	- waiting to lock <0x000000077b22b7a0> (a java.util.concurrent.locks.ReentrantLock)
+	- locked <0x000000077b22b680> (a java.util.concurrent.locks.ReentrantLock)
+	at org.itmo.Graph$$Lambda$3/1915910607.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+   Locked ownable synchronizers:
+	- <0x000000077b22b8e0> (a java.util.concurrent.ThreadPoolExecutor$Worker)
+
+"ForkJoinPool.commonPool-worker-10" #19 daemon prio=5 os_prio=0 tid=0x00007f0760005000 nid=0x19d36 waiting on condition [0x00007f07cf0f9000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000006d0001d70> (a java.util.concurrent.ForkJoinPool)
+	at java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1824)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1693)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+
+   Locked ownable synchronizers:
+	- None
+
+"ForkJoinPool.commonPool-worker-3" #20 daemon prio=5 os_prio=0 tid=0x00007f074c001000 nid=0x19d35 waiting on condition [0x00007f07cf1f9000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000006d0001d70> (a java.util.concurrent.ForkJoinPool)
+	at java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1824)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1693)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+
+   Locked ownable synchronizers:
+	- None
+
+"ForkJoinPool.commonPool-worker-1" #18 daemon prio=5 os_prio=0 tid=0x00007f0750001000 nid=0x19d34 waiting on condition [0x00007f07cf2f9000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000006d0001d70> (a java.util.concurrent.ForkJoinPool)
+	at java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1824)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1693)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+
+   Locked ownable synchronizers:
+	- None
+
+"ForkJoinPool.commonPool-worker-15" #16 daemon prio=5 os_prio=0 tid=0x00007f0760003000 nid=0x19d33 waiting on condition [0x00007f07cf3f9000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000006d0001d70> (a java.util.concurrent.ForkJoinPool)
+	at java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1824)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1693)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+
+   Locked ownable synchronizers:
+	- None
+
+"ForkJoinPool.commonPool-worker-13" #14 daemon prio=5 os_prio=0 tid=0x00007f0754003000 nid=0x19d30 waiting on condition [0x00007f07cf6f9000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000006d0001d70> (a java.util.concurrent.ForkJoinPool)
+	at java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1824)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1693)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+
+   Locked ownable synchronizers:
+	- None
+
+"ForkJoinPool.commonPool-worker-2" #11 daemon prio=5 os_prio=0 tid=0x00007f07e821e800 nid=0x19d2d waiting on condition [0x00007f07cf9f9000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000006d0001d70> (a java.util.concurrent.ForkJoinPool)
+	at java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1824)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1693)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+
+   Locked ownable synchronizers:
+	- None
+
+"ForkJoinPool.commonPool-worker-9" #10 daemon prio=5 os_prio=0 tid=0x00007f07e821d000 nid=0x19d2c waiting on condition [0x00007f07cfaf9000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000006d0001d70> (a java.util.concurrent.ForkJoinPool)
+	at java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1824)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1693)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+
+   Locked ownable synchronizers:
+	- None
+
+"Service Thread" #9 daemon prio=9 os_prio=0 tid=0x00007f07e80e7000 nid=0x19d2a runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C1 CompilerThread3" #8 daemon prio=9 os_prio=0 tid=0x00007f07e80d2000 nid=0x19d29 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread2" #7 daemon prio=9 os_prio=0 tid=0x00007f07e80cf800 nid=0x19d28 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread1" #6 daemon prio=9 os_prio=0 tid=0x00007f07e80ce000 nid=0x19d27 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread0" #5 daemon prio=9 os_prio=0 tid=0x00007f07e80cb000 nid=0x19d26 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Signal Dispatcher" #4 daemon prio=9 os_prio=0 tid=0x00007f07e80c8000 nid=0x19d25 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Finalizer" #3 daemon prio=8 os_prio=0 tid=0x00007f07e8094800 nid=0x19d24 in Object.wait() [0x00007f07d4686000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000006d0065e80> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	- locked <0x00000006d0065e80> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:188)
+
+   Locked ownable synchronizers:
+	- None
+
+"Reference Handler" #2 daemon prio=10 os_prio=0 tid=0x00007f07e8090000 nid=0x19d23 in Object.wait() [0x00007f07d4786000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000006d0065ec0> (a java.lang.ref.Reference$Lock)
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	- locked <0x00000006d0065ec0> (a java.lang.ref.Reference$Lock)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+   Locked ownable synchronizers:
+	- None
+
+"main" #1 prio=5 os_prio=0 tid=0x00007f07e800a800 nid=0x19d17 waiting on condition [0x00007f07ecbfe000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x000000077b22b8c0> (a java.util.concurrent.FutureTask)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.FutureTask.awaitDone(FutureTask.java:429)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:244)
+	at org.itmo.Graph.parallelBFS(Graph.java:67)
+	at MainKt.main(MainKt.java:12)
+
+   Locked ownable synchronizers:
+	- None
+
+"VM Thread" os_prio=0 tid=0x00007f07e8086800 nid=0x19d22 runnable 
+
+"GC task thread#0 (ParallelGC)" os_prio=0 tid=0x00007f07e8020800 nid=0x19d18 runnable 
+
+"GC task thread#1 (ParallelGC)" os_prio=0 tid=0x00007f07e8022800 nid=0x19d19 runnable 
+
+"GC task thread#2 (ParallelGC)" os_prio=0 tid=0x00007f07e8024000 nid=0x19d1a runnable 
+
+"GC task thread#3 (ParallelGC)" os_prio=0 tid=0x00007f07e8026000 nid=0x19d1b runnable 
+
+"GC task thread#4 (ParallelGC)" os_prio=0 tid=0x00007f07e8028000 nid=0x19d1c runnable 
+
+"GC task thread#5 (ParallelGC)" os_prio=0 tid=0x00007f07e8029800 nid=0x19d1d runnable 
+
+"GC task thread#6 (ParallelGC)" os_prio=0 tid=0x00007f07e802b800 nid=0x19d1e runnable 
+
+"GC task thread#7 (ParallelGC)" os_prio=0 tid=0x00007f07e802d800 nid=0x19d1f runnable 
+
+"GC task thread#8 (ParallelGC)" os_prio=0 tid=0x00007f07e802f000 nid=0x19d20 runnable 
+
+"GC task thread#9 (ParallelGC)" os_prio=0 tid=0x00007f07e8031000 nid=0x19d21 runnable 
+
+"VM Periodic Task Thread" os_prio=0 tid=0x00007f07e80ea000 nid=0x19d2b waiting on condition 
+
+JNI global references: 217
+
+
+Found one Java-level deadlock:
+=============================
+"pool-15-thread-6":
+  waiting to lock monitor 0x00007f072c005aa8 (object 0x000000077b22b650, a java.util.concurrent.locks.ReentrantLock),
+  which is held by "pool-15-thread-5"
+"pool-15-thread-5":
+  waiting to lock monitor 0x00007f077c004068 (object 0x000000077b22b770, a java.util.concurrent.locks.ReentrantLock),
+  which is held by "pool-15-thread-2"
+"pool-15-thread-2":
+  waiting to lock monitor 0x00007f077c003fb8 (object 0x000000077b22b680, a java.util.concurrent.locks.ReentrantLock),
+  which is held by "pool-15-thread-1"
+"pool-15-thread-1":
+  waiting to lock monitor 0x00007f077c004c18 (object 0x000000077b22b7a0, a java.util.concurrent.locks.ReentrantLock),
+  which is held by "pool-15-thread-3"
+"pool-15-thread-3":
+  waiting to lock monitor 0x00007f077c004068 (object 0x000000077b22b770, a java.util.concurrent.locks.ReentrantLock),
+  which is held by "pool-15-thread-2"
+
+Java stack information for the threads listed above:
+===================================================
+"pool-15-thread-6":
+	at org.itmo.Graph.lambda$parallelBFS$0(Graph.java:51)
+	- waiting to lock <0x000000077b22b650> (a java.util.concurrent.locks.ReentrantLock)
+	at org.itmo.Graph$$Lambda$3/1915910607.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+"pool-15-thread-5":
+	at org.itmo.Graph.lambda$parallelBFS$0(Graph.java:53)
+	- waiting to lock <0x000000077b22b770> (a java.util.concurrent.locks.ReentrantLock)
+	- locked <0x000000077b22b650> (a java.util.concurrent.locks.ReentrantLock)
+	at org.itmo.Graph$$Lambda$3/1915910607.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+"pool-15-thread-2":
+	at org.itmo.Graph.lambda$parallelBFS$0(Graph.java:53)
+	- waiting to lock <0x000000077b22b680> (a java.util.concurrent.locks.ReentrantLock)
+	- locked <0x000000077b22b770> (a java.util.concurrent.locks.ReentrantLock)
+	at org.itmo.Graph$$Lambda$3/1915910607.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+"pool-15-thread-1":
+	at org.itmo.Graph.lambda$parallelBFS$0(Graph.java:53)
+	- waiting to lock <0x000000077b22b7a0> (a java.util.concurrent.locks.ReentrantLock)
+	- locked <0x000000077b22b680> (a java.util.concurrent.locks.ReentrantLock)
+	at org.itmo.Graph$$Lambda$3/1915910607.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+"pool-15-thread-3":
+	at org.itmo.Graph.lambda$parallelBFS$0(Graph.java:53)
+	- waiting to lock <0x000000077b22b770> (a java.util.concurrent.locks.ReentrantLock)
+	- locked <0x000000077b22b7a0> (a java.util.concurrent.locks.ReentrantLock)
+	at org.itmo.Graph$$Lambda$3/1915910607.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+Found 1 deadlock.
+
